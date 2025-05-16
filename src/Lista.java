@@ -1,6 +1,6 @@
 public class Lista<T> {
 
-    private Nodo<T> root;
+    protected Nodo<T> root;
 
     public Lista() {
         root = null;
