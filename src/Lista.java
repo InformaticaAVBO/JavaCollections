@@ -37,7 +37,7 @@ public class Lista<T> {
         String s = "Lista: ";
         Nodo<T> tmp = root;
         while(tmp != null){
-            s += tmp + "\t";
+            s += tmp + "\n";
             tmp = tmp.getSucc();
         }
         return s;

@@ -5,34 +5,46 @@ public class Tree<T extends Comparable<T>> {
         root = null;
     }
 
-    public void add(T newvalue) {
+    public void add(T newValue) {
+        Treenode<T> newTreeNode = new Treenode<>(newValue);
 
-        Treenode<T> newTreeNode = new Treenode<>(newvalue);
+        if (root == null) {
+            root = newTreeNode;
+            return;
+        }
 
         Treenode<T> tmp = root;
         while (true) {
-            try{
-                if (tmp.getValue() == null){ root.setValue(newvalue); break; }
-                if (tmp.getValue().compareTo(newTreeNode.getValue()) >= 0) tmp = tmp.getRight();
-                if (tmp.getValue().compareTo(newTreeNode.getValue()) < 0) tmp = tmp.getLeft();
-            }catch(NullPointerException e ){
-                System.out.println("a");
+            if (newValue.compareTo(tmp.getValue()) >= 0) {
+                if (tmp.getRight() == null) {
+                    tmp.setRight(newTreeNode);
+                    break;
+                } else {
+                    tmp = tmp.getRight();
+                }
+            } else {
+                if (tmp.getLeft() == null) {
+                    tmp.setLeft(newTreeNode);
+                    break;
+                } else {
+                    tmp = tmp.getLeft();
+                }
             }
         }
-
     }
 
     public void StampaOP(Treenode<T> node, int level) {
-    if (node == null) return;
+        if (node == null)
+            return;
 
-    StampaOP(node.getRight(), level + 1);
+        StampaOP(node.getRight(), level + 1);
 
-    for (int i = 0; i < level; i++) System.out.print("\t");
-    System.out.println(node.getValue());
+        for (int i = 0; i < level; i++)
+            System.out.print("\t");
+        System.out.println(node.getValue());
 
-    StampaOP(node.getLeft(), level + 1);
-}
-
+        StampaOP(node.getLeft(), level + 1);
+    }
 
     @Override
     public String toString() {
@@ -40,6 +52,5 @@ public class Tree<T extends Comparable<T>> {
         StampaOP(root, 0);
         return sb.toString();
     }
-
 
 }

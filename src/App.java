@@ -31,6 +31,8 @@ public class App {
         albero.add(15);
         System.out.println(albero);
 
+        SortTextFile s = new SortTextFile();
+        s.leggiFile();
 
 
     }
