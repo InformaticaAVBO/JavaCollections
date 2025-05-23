@@ -16,7 +16,6 @@ public class SortTextFile {
       while (scn.hasNextLine()) {
         String data = scn.nextLine();
         l.add(data);
-        ;
       }
       scn.close();
     } catch (FileNotFoundException e) {

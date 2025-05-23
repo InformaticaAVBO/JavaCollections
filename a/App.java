@@ -1,4 +1,4 @@
-public class App {
+/*public class App {
     public static void main(String[] args) throws Exception {
 
         /*
@@ -9,7 +9,7 @@ public class App {
         MyIntArray a = new MyIntArray();
         for (int i=0; i<10; i++) a.add(i);
         System.out.println(a);
-        */
+        
 
         Lista<String> l = new Lista<>();
         l.add("bologna");
@@ -36,4 +36,4 @@ public class App {
 
 
     }
-}
+}*/
