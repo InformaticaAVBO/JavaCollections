@@ -1,5 +1,4 @@
-public class NodoB<T> extends Nodo<T> {
-
+public class NodoB<T> {
     protected NodoB<T> prev;
     protected T valore;
     protected NodoB<T> succ;
@@ -24,4 +23,19 @@ public class NodoB<T> extends Nodo<T> {
         this.prev = prev;
     }
 
- }
+    public NodoB<T> getSucc() {
+        return succ;
+    }
+
+    public void setSucc(NodoB<T> succ) {
+        this.succ = succ;
+    }
+
+    public T getValore() {
+        return valore;
+    }
+
+    public void setValore(T valore) {
+        this.valore = valore;
+    }
+}
