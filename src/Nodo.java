@@ -1,7 +1,8 @@
 public class Nodo<T> {
 
-    T valore;
-    Nodo<T> succ;
+   protected T valore;
+   
+   protected Nodo<T> succ;
 
     public Nodo() {
         valore = null;
