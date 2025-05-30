@@ -8,6 +8,7 @@ public class ListaB<T> {
             this.valore = valore;
         }
     }
+    
 
     private Nodo<T> testa;
     private Nodo<T> coda;
