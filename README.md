@@ -17,4 +17,21 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
-<h1>DOLCE GAY</h1>
+## Introduzione
+
+Benvenuti nel mondo Java di VS Code. Ecco una guida per iniziare a scrivere codice Java in Visual Studio Code.
+
+## Struttura delle cartelle
+
+L'area di lavoro contiene due cartelle predefinite, dove:
+
+- `src`: la cartella per gestire i sorgenti
+- `lib`: la cartella per gestire le dipendenze
+
+Nel frattempo, i file di output compilati verranno generati nella cartella `bin` per impostazione predefinita.
+
+> Se desiderate personalizzare la struttura delle cartelle, aprite `.vscode/settings.json` e aggiornate le impostazioni correlate.
+
+## Gestione delle dipendenze
+
+La vista `JAVA PROJECTS` consente di gestire le dipendenze. Maggiori dettagli sono disponibili [qui](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
