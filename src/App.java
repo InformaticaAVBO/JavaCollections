@@ -29,6 +29,7 @@ public class App {
        System.out.println(lo);
 
        System.out.println(l.getLength());
+       
        l.removePosition(1);
        l.removePosition(l.getLength());
        System.out.println(l);
